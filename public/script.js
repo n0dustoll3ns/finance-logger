@@ -1,11 +1,18 @@
 "use strict";
-const add = (a, b, c = 10) => {
-    console.log(a + b);
-    console.log(c);
+let greet;
+greet = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
 };
-add(5, 10, 'ninja');
-const minus = (a, b) => {
-    return a + b;
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
 };
-let result = minus(10, 7);
-console.log(result);
+let logDetails;
+logDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+};
