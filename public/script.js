@@ -1,12 +1,11 @@
 "use strict";
-console.log(narcissistic(154));
-function narcissistic(value) {
-    let intareqr = [];
-    value.toString().split('').forEach(e => intareqr.push(parseInt(e)));
-    let res = 0;
-    intareqr.forEach((e) => res += e ** (value.toString().length));
-    if (res === value) {
-        return true;
-    }
-    return false;
-}
+const add = (a, b, c /*?*/ = 10) => {
+    console.log(a + b);
+    console.log(c);
+};
+add(5, 10, 'ninja');
+const minus = (a, b) => {
+    return a + b;
+};
+let result = minus(10, 7);
+console.log(result);
