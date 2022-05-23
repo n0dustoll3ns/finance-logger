@@ -32,5 +32,17 @@ let tup = ['ryu', 25, true];
 // tup[0] = false;
 tup[0] = 'ken';
 let student;
-//student = [23564, 'chun-li'];
 student = ['chun-li', 23564];
+export function multiplicationTable(size) {
+    let res = [];
+    for (let i = 0; i < size; i++) {
+        res[i] = [];
+    }
+    for (let i = 0; i < size; i++) {
+        for (let e = 0; e < size; e++) {
+            res[i][e] = (e + 1) * (i + 1);
+        }
+    }
+    return res;
+}
+console.log(multiplicationTable(3));
